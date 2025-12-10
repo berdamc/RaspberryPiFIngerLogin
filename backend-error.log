@@ -1,0 +1,374 @@
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 258-973-704
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 258-973-704
+10.1.40.90 - - [26/Aug/2025 19:24:42] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:43] "[35m[1mGET /templates HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rasp/projeto/backend.py", line 33, in decorated
+    return f(*args, **kwargs)
+  File "/home/rasp/projeto/backend.py", line 136, in list_templates
+    log_operation("Templates listados com sucesso.")
+  File "/home/rasp/projeto/backend.py", line 25, in log_operation
+    with open(log_file, 'a', encoding='utf-8') as f:
+PermissionError: [Errno 13] Permission denied: 'log.txt'
+10.1.40.90 - - [26/Aug/2025 19:24:44] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rasp/projeto/backend.py", line 107, in logout
+    log_operation(f"Usuário '{user}' realizou logout.")
+  File "/home/rasp/projeto/backend.py", line 25, in log_operation
+    with open(log_file, 'a', encoding='utf-8') as f:
+PermissionError: [Errno 13] Permission denied: 'log.txt'
+10.1.40.90 - - [26/Aug/2025 19:24:45] "[37mGET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:45] "[37mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:45] "[37mGET /logout?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:45] "[37mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:50] "[32mGET / HTTP/1.1[0m" 302 -
+10.1.40.90 - - [26/Aug/2025 19:24:50] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:50] "[35m[1mGET /templates HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rasp/projeto/backend.py", line 33, in decorated
+    return f(*args, **kwargs)
+  File "/home/rasp/projeto/backend.py", line 136, in list_templates
+    log_operation("Templates listados com sucesso.")
+  File "/home/rasp/projeto/backend.py", line 25, in log_operation
+    with open(log_file, 'a', encoding='utf-8') as f:
+PermissionError: [Errno 13] Permission denied: 'log.txt'
+10.1.40.90 - - [26/Aug/2025 19:24:52] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rasp/projeto/backend.py", line 107, in logout
+    log_operation(f"Usuário '{user}' realizou logout.")
+  File "/home/rasp/projeto/backend.py", line 25, in log_operation
+    with open(log_file, 'a', encoding='utf-8') as f:
+PermissionError: [Errno 13] Permission denied: 'log.txt'
+10.1.40.90 - - [26/Aug/2025 19:24:52] "[37mGET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:52] "[37mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:24:52] "[37mGET /logout?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:25:03] "[32mGET / HTTP/1.1[0m" 302 -
+10.1.40.90 - - [26/Aug/2025 19:25:03] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:25:03] "[35m[1mGET /templates HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rasp/projeto/backend.py", line 33, in decorated
+    return f(*args, **kwargs)
+  File "/home/rasp/projeto/backend.py", line 136, in list_templates
+    log_operation("Templates listados com sucesso.")
+  File "/home/rasp/projeto/backend.py", line 25, in log_operation
+    with open(log_file, 'a', encoding='utf-8') as f:
+PermissionError: [Errno 13] Permission denied: 'log.txt'
+10.1.40.90 - - [26/Aug/2025 19:25:05] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rasp/projeto/backend.py", line 107, in logout
+    log_operation(f"Usuário '{user}' realizou logout.")
+  File "/home/rasp/projeto/backend.py", line 25, in log_operation
+    with open(log_file, 'a', encoding='utf-8') as f:
+PermissionError: [Errno 13] Permission denied: 'log.txt'
+10.1.40.90 - - [26/Aug/2025 19:25:05] "[37mGET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:25:05] "[37mGET /logout?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:25:05] "[37mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:27:09] "[32mGET /logout HTTP/1.1[0m" 302 -
+10.1.40.90 - - [26/Aug/2025 19:27:09] "[37mGET / HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:27:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+10.1.40.90 - - [26/Aug/2025 19:27:13] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:27:13] "[37mGET /templates HTTP/1.1[0m" 200 -
+10.1.40.90 - - [26/Aug/2025 19:27:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+10.1.40.90 - - [26/Aug/2025 19:27:16] "[37mGET / HTTP/1.1[0m" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 227-324-435
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 559-621-988
+10.1.41.77 - - [12/Nov/2025 14:26:17] "[37mGET / HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:26:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10.1.41.77 - - [12/Nov/2025 14:26:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+10.1.41.77 - - [12/Nov/2025 14:26:26] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:26:26] "[37mGET /templates HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:26:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+10.1.41.77 - - [12/Nov/2025 14:26:29] "[37mGET / HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:29:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+10.1.41.77 - - [12/Nov/2025 14:29:45] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:29:45] "[37mGET /templates HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:30:13] "[35m[1mPOST /enroll HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:30:26] "[35m[1mPOST /enroll HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:30:50] "[35m[1mPOST /enroll HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:32:08] "[35m[1mPOST /enroll HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:32:31] "[35m[1mPOST /enroll HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:32:41] "[37mGET /find HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:32:47] "[35m[1mPOST /enroll HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:36:21] "[35m[1mPOST /enroll HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:36:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+10.1.41.77 - - [12/Nov/2025 14:36:23] "[37mGET / HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:50:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+10.1.41.77 - - [12/Nov/2025 14:50:17] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+10.1.41.77 - - [12/Nov/2025 14:50:17] "[35m[1mGET /find HTTP/1.1[0m" 500 -
+10.1.41.77 - - [12/Nov/2025 14:50:18] "[35m[1mGET /templates HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/rasp/projeto/backend.py", line 33, in decorated
+    return f(*args, **kwargs)
+  File "/home/rasp/projeto/backend.py", line 113, in list_templates
+    if finger.read_templates() != adafruit_fingerprint.OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 268, in read_templates
+    self.read_sysparam()
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 156, in read_sysparam
+    r = self._get_packet(28)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 258-973-704
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/rasp/projeto/backend.py", line 14, in <module>
+    finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 127, in __init__
+    if self.verify_password() != OK:
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 143, in verify_password
+    return self._get_packet(12)[0]
+  File "/home/rasp/.local/lib/python3.9/site-packages/adafruit_fingerprint.py", line 348, in _get_packet
+    raise RuntimeError("Failed to read data from sensor")
+RuntimeError: Failed to read data from sensor
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 258-973-704
